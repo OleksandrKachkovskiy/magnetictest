@@ -1,0 +1,9 @@
+<h1>Users list</h1>
+
+ <?php foreach ($this->users as $user): ?>
+ <article>
+     <h1 id="user<?= $user->getId() ?>"><?= $user->getName() ?></h1>
+    <h1 id="user<?= $user->getEmail() ?>"><?= $user->getIp() ?></h1>
+
+ </article>
+ <?php endforeach ?>

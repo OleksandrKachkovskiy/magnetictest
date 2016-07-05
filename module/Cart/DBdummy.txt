@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS products (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  name varchar(255) NOT NULL,
+  description varchar(255) NOT NULL,
+  price float(9,2) NOT NULL,
+  PRIMARY KEY (id)
+
+);
+CREATE TABLE IF NOT EXISTS store_orders (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  product_id int(11) NOT NULL,
+  quantity int(11) NOT NULL,
+  total_price float(9,2) NOT NULL,
+  first_name varchar(255) DEFAULT NULL,
+  last_name varchar(255) DEFAULT NULL,
+  PRIMARY KEY (id)
+);

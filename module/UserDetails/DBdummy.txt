@@ -1,0 +1,11 @@
+CREATE TABLE products (
+   id int(11) NOT NULL auto_increment,
+   price int NOT NULL,
+   title varchar(100) NOT NULL,
+   description TEXT NOT NULL,
+   PRIMARY KEY (id)
+ );
+
+ INSERT INTO products (title, price, text) VALUES  ('Product #1',100, 'Some description');
+ INSERT INTO products (title, price, text) VALUES  ('Product #2',110, 'Another description');
+ INSERT INTO products (title, price, text) VALUES  ('Product #3',200, 'One more description');

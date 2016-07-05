@@ -1,0 +1,10 @@
+<h1>User Details</h1>
+
+ <dl>
+     <dt>User name</dt>
+     <dd><?php echo $this->escapeHtml($this->user->getName());?></dd>
+     <dt>User email</dt>
+     <dd><?php echo $this->escapeHtml($this->user->getEmail());?></dd>
+	 <dt>User IP</dt>
+     <dd><?php echo $this->escapeHtml($this->user->getIp());?></dd>
+ </dl>

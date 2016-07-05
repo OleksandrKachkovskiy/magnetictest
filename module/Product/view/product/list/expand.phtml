@@ -1,0 +1,10 @@
+<h1>Product Details</h1>
+
+ <dl>
+     <dt>Product title</dt>
+     <dd><?php echo $this->escapeHtml($this->product->getTitle());?></dd>
+     <dt>Product description</dt>
+     <dd><?php echo $this->escapeHtml($this->product->getDescription());?></dd>
+	 <dt>Product price</dt>
+	 <dd><?php echo $this->escapeHtml($this->product->getPrice());?></dd>
+ </dl>
